@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/events.css">
+    <title>Events - INPT Events Hub</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/res/images/imgpng.png" alt="logo" width="15px">
+            <strong>Campus Events Hub</strong>
+        </div>
+        
+        <nav>
+            <a href="/">home</a>
+            <a href="/events.html" class="active">events</a>
+            <a href="/about.html">about</a>
+            <a href="/contact-us.html">contact</a>
+        </nav>
+        <div class="header-auth">
+            <a class="header-btn" href="/auth/login.html">login</a>
+            <a class="header-btn" href="/auth/register.html">register</a>
+        </div>
+    </header>
+
+    <main class="events-page">
+        <section class="events-hero">
+            <h1>Upcoming Events</h1>
+            <p>Discover and join exciting events at INPT</p>
+        </section>
+
+        <div class="events-container">
+            <aside class="filters">
+                <div class="filter-section">
+                    <h3>Filter by Category</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" id="all-categories" name="category" value="all" checked> All Categories</label>
+                        <label><input type="checkbox" name="category" value="workshop" class="category-checkbox" checked> Workshops</label>
+                        <label><input type="checkbox" name="category" value="hackathon" class="category-checkbox" checked> Hackathons</label>
+                        <label><input type="checkbox" name="category" value="seminar" class="category-checkbox" checked> Seminars</label>
+                        <label><input type="checkbox" name="category" value="conference" class="category-checkbox" checked> Conferences</label>
+                        <label><input type="checkbox" name="category" value="workshop" class="category-checkbox" checked> Training</label>
+                        <label><input type="checkbox" name="category" value="networking" class="category-checkbox" checked> Networking</label>
+                        <label><input type="checkbox" name="category" value="competition" class="category-checkbox" checked> Competitions</label>
+                        <label><input type="checkbox" name="category" value="cultural" class="category-checkbox" checked> Cultural</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Filter by Date</h3>
+                    <div class="filter-options">
+                        <label><input type="radio" name="date" value="all" checked> All Upcoming</label>
+                        <label><input type="radio" name="date" value="week"> This Week</label>
+                        <label><input type="radio" name="date" value="month"> This Month</label>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="events-list">
+                <!-- Event Card 1 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="/res/images/workshop.jpg" alt="Web Development Workshop">
+                        <span class="event-category">Workshop</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date">15</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Advanced Web Development Workshop</h3>
+                            <div class="event-meta">
+                                <span><i>📍</i> Room 302</span>
+                                <span><i>🕒</i> 14:00 - 18:00</span>
+                            </div>
+                            <p>Learn the latest web development technologies and best practices in this hands-on workshop.</p>
+                            <a href="events/event-detail.html" class="event-btn">Event Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 2 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="/res/images/hackathon.jpg" alt="Hackathon">
+                        <span class="event-category">Hackathon</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date">22</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>24-Hour Code Sprint</h3>
+                            <div class="event-meta">
+                                <span><i>📍</i> Innovation Lab</span>
+                                <span><i>🕒</i> 10:00 - Next day 10:00</span>
+                            </div>
+                            <p>Join us for an intense 24-hour coding competition. Build something amazing and win prizes!</p>
+                            <a href="events/event-detail.html" class="event-btn">Event Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 3 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="/res/images/seminar.jpg" alt="AI Seminar">
+                        <span class="event-category">Seminar</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date">30</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Future of Artificial Intelligence</h3>
+                            <div class="event-meta">
+                                <span><i>📍</i> Auditorium A</span>
+                                <span><i>🕒</i> 16:00 - 18:00</span>
+                            </div>
+                            <p>Expert panel discussion on the latest trends and future directions in AI and machine learning.</p>
+                            <a href="events/event-detail.html" class="event-btn">Event Details</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-up">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>INPT Events Hub connects students with exciting learning opportunities and networking events.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: events@inpt.ac.ma</p>
+                    <p>Phone: +212 XXX XXX XXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 INPT Events Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

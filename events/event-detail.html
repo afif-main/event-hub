@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/event-detail.css">
+    <title>Event Details - INPT Events Hub</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/res/images/imgpng.png" alt="logo" width="15px">
+            <strong>Campus Events Hub</strong>
+        </div>
+        
+        <nav>
+            <a href="/">home</a>
+            <a href="/events.html" class="active">events</a>
+            <a href="/about.html">about</a>
+            <a href="/contact-us.html">contact</a>
+        </nav>
+        <div class="header-auth">
+            <a class="header-btn" href="/auth/login.html">login</a>
+            <a class="header-btn" href="/auth/register.html">register</a>
+        </div>
+    </header>
+
+    <main class="event-detail-page">
+        <div class="event-header">
+            <div class="event-header-content">
+                <span class="event-category">Workshop</span>
+                <h1>Advanced Web Development Workshop</h1>
+                <div class="event-meta">
+                    <div class="meta-item">
+                        <i class="icon">📅</i>
+                        <span>May 15, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="icon">🕒</i>
+                        <span>14:00 - 18:00</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="icon">📍</i>
+                        <span>INPT Main Campus, Room 302</span>
+                    </div>
+                </div>
+                <a href="#register" class="register-btn">Register Now</a>
+            </div>
+            <div class="event-image">
+                <img src="/res/images/workshop.jpg" alt="Advanced Web Development Workshop">
+            </div>
+        </div>
+
+        <div class="event-content">
+            <div class="event-description">
+                <h2>About This Event</h2>
+                <p>Join us for an immersive workshop on advanced web development techniques. This hands-on session will cover modern JavaScript frameworks, responsive design principles, and performance optimization.</p>
+                
+                <h3>What You'll Learn</h3>
+                <ul>
+                    <li>Advanced JavaScript concepts and patterns</li>
+                    <li>Building responsive layouts with CSS Grid and Flexbox</li>
+                    <li>Performance optimization techniques</li>
+                    <li>Modern frontend frameworks overview</li>
+                    <li>Best practices for web accessibility</li>
+                </ul>
+
+                <h3>Prerequisites</h3>
+                <p>Basic knowledge of HTML, CSS, and JavaScript is recommended. Bring your laptop with your preferred code editor installed.</p>
+
+                <h3>About the Speaker</h3>
+                <div class="speaker">
+                    <img src="/res/images/speaker.jpg" alt="Speaker Name" class="speaker-image">
+                    <div class="speaker-info">
+                        <h4>Dr. Sarah Johnson</h4>
+                        <p>Senior Web Developer & Educator</p>
+                        <p>With over 10 years of experience in web development, Dr. Johnson has worked with numerous tech companies and trained hundreds of developers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="event-sidebar">
+                <div class="event-details">
+                    <h3>Event Details</h3>
+                    <div class="detail-item">
+                        <i class="icon">📅</i>
+                        <div>
+                            <h4>Date & Time</h4>
+                            <p>May 15, 2025<br>14:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">📍</i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>INPT Main Campus<br>Room 302, Building A<br>Rabat, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">👥</i>
+                        <div>
+                            <h4>Available Seats</h4>
+                            <p>25 of 50 remaining</p>
+                        </div>
+                    </div>
+                    <a href="#register" class="register-btn">Register Now</a>
+                </div>
+            </aside>
+        </div>
+
+        <section class="event-register" id="register">
+            <h2>Register for This Event</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institution/Company</label>
+                    <input type="text" id="institution" name="institution">
+                </div>
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-up">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>INPT Events Hub connects students with exciting learning opportunities and networking events.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: events@inpt.ac.ma</p>
+                    <p>Phone: +212 XXX XXX XXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 INPT Events Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/event-detail.js"></script>
+</body>
+</html>
